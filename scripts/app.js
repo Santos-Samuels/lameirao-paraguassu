@@ -17,7 +17,7 @@ const loadProducts = (products) => {
                 <h3 class="text-center">${product.name}</h3>
                 <p class="text-center fs-6">${product.color}</p>
                 <p class="text-center fs-5 mb-0">De: <span class="text-decoration-line-through">${product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
-                <p class="text-center fs-3 fw-bolder">Por: <span class="">${product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
+                <p class="text-center fs-3 fw-bolder">Por: <span class="">${product.promoPrice.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
                 
                 <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productDetailModal" onclick="loadProductsDetailModal(${product.id}, products)">Ver detalhe</button>
             </article>
@@ -57,7 +57,7 @@ const loadProductsDetailModal = (productID, products) => {
                     </div>
 
                     <p class="text-center fs-5 mb-0 border-top pt-2">De: <span class="text-decoration-line-through">${product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
-                    <p class="text-center fs-3 fw-bolder mb-0">Por: <span class="">${product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
+                    <p class="text-center fs-3 fw-bolder mb-0">Por: <span class="">${product.promoPrice.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p>
                 </div>
             `
         }
