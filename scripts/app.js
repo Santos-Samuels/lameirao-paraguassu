@@ -165,5 +165,5 @@ const generateWhatsappMessage = () => {
     
     const message = `Olá, eu sou ${data.get("costumerName")} e gostei de uma lameira que vir no seu site.%0A%0A> INFORMAÇÕES DA LAMEIRA%0AFrase: *${data.get("lameiraName")}*%0ACor: *${data.get("lameiraColor")}*%0ATamanho: *${data.get("lameiraSize")}*%0AQuantidade: *${data.get("lameiraQuantity")}*%0A%0A> INFORMAÇÕES DO CLIENTE%0ANome: *${data.get("costumerName")}*%0ATelefone: *${data.get("costumerPhone")}*%0A%0A> INFORMAÇÕES DE ENTREGA%0AEndereço: *${data.get("costumerAdress")}*%0ABairro: *${data.get("costumerAdressDistrict")}*%0ACidade: *${data.get("costumerAdressCity")} - ${data.get("costumerAdressUF")}*%0ACidade: *${data.get("costumerAdressCEP")}*%0A`
 
-    return `http://api.whatsapp.com/send?l=pt_BR&phone=5575998578488&text=${message}`
+    return `http://api.whatsapp.com/send?l=pt_BR&phone=5571996527444&text=${message}`
 }

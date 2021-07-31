@@ -118,3 +118,29 @@ main {
 .rounded {
     border-radius: 10px !important;
 }
+
+whatsapp {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: white;
+}
+
+whatsapp i {
+    color: var(--complement-color-green);
+}
+
+whatsapp i:hover {
+    color: white;
+}
+
+whatsapp:hover {
+    background-color: var(--complement-color-green);
+}
+
+
+@media (max-width: 650px) {
+    whatsapp {
+        right: 1rem;
+    }
+}
