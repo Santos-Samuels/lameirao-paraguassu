@@ -166,6 +166,10 @@ const generateWhatsappMessage = () => {
     const message = `Olá, eu sou ${data.get("costumerName")} e gostei de uma lameira que vir no seu site. ^ l
         INFORMAÇÕES DA LAMEIRA - Frase: *${data.get("lameiraName")}*, Cor: *${data.get("lameiraColor")}*, Tamanho: *${data.get("lameiraSize")}*, Quantidade: *${data.get("lameiraQuantity")}* \n
         bbb
+
+        Olá, eu sou Samuel e gostei de uma lameira que vir no seu site. 
+
+        INFORMAÇÕES DA LAMEIRA - Frase: Nunca foi sorte, sempre foi Deus, Cor: branco com preto, Tamanho: 100 x 260, Quantidade: 1
     `
 
     return `http://api.whatsapp.com/send?l=pt_BR&phone=5575998578488&text=${message}`
