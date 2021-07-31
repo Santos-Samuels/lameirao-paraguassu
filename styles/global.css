@@ -1,0 +1,120 @@
+:root {
+    --primary: #0750BD;
+    --primary-2: #053f96;
+    --primary-hover: #004e7a;
+    --secondary: #F2B138;
+    --secondary-hover: #ca983c;
+    --complement-color-green: #01A61C;
+    --bg-color: #F2F2F2;
+    --bg-color-2: #D9D9D9;
+    --text-color-1: #2B2B2B;
+    --text-color-2: #383838;
+    --text-color-3: #6d6c6c;
+    --text-color-4: #A1A5A6;
+}
+
+body {
+    color: var(--text-color-2);
+    background-color: var(--bg-color);
+}
+
+main {
+    z-index: 1;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: #08809b !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:focus {
+    background-color: var(--primary-hover) !important;
+    box-shadow: 0 0 0 0.2rem rgba(13, 180, 217, 0.288) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: #9c9204;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+    border-color: #9c9204;
+}
+
+.btn-secondary:focus {
+    background-color: var(--secondary-hover) !important;
+    box-shadow: 0 0 0 0.2rem rgba(242, 226, 5, 0.39) !important;
+}
+
+.text-light {
+    color: var(--text-color-3) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-primary-2 {
+    color: var(--primary-2) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-complement-color-green {
+    color: var(--complement-color-green) !important;
+}
+
+.bg-light-gray {
+    background-color: var(--bg-color) !important;
+}
+.bg-color-2 {
+    background-color: var(--bg-color-2) !important;
+}
+
+.bg-dark-gray {
+    background-color: var(--text-color-2) !important;
+}
+
+.bg-gray {
+    background-color: var(--text-color-4) !important;
+}
+
+.text-color-3 {
+    color: var(--text-color-4);
+}
+
+.border-color-primary {
+    border-color: var(--primary) !important;
+}
+
+.border-top, .border-bottom {
+    border-color:rgba(0, 0, 0, 0.1) !important;
+}
+
+.hideScroll {
+    overflow: hidden !important;
+}
+
+.shadow-md {
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    max-width: 350px;
+    background-color: white;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}

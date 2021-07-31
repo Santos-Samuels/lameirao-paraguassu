@@ -1,0 +1,27 @@
+header #logo {
+    font-size: 2.8rem;
+}
+
+header {
+    border-radius: 0 0 30px 30px;
+    background-color: white;
+}
+
+nav {
+    border-radius: 40px;
+    padding: 5px 0;
+}
+
+nav a {
+    color: var(--text-color-1);
+    font-weight: 500;
+    padding: 6px 1.3rem;
+    border-radius: 40px;
+    background-color: var(--bg-color-2);
+}
+
+nav a:hover, .active {
+    color: white;
+    background-color: var(--text-color-1);
+
+}
