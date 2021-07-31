@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
 </head>
-<body class="" onload="loadProducts(products)">
+<body class="">
     <header class="d-flex flex-wrap align-items-center justify-content-evenly shadow-md pb-4">
         <div class="mt-4">
             <h1 class="mb-0 ms-2 text-primary-2" id="logo">Lameirão Paraguassu</h1>
@@ -22,9 +22,9 @@
 
         <nav class="bg-color-2 mt-4">
             <div class="fs-4">
-                <a class="active col text-decoration-none" href="index.html">INÍCIO</a>
-                <a class="col text-decoration-none" href="pages/about.html"><i class="bi bi-geo-alt-fill"></i> SOBRE</a>
-                <a class="col text-decoration-none" href="pages/contact.html">CONTATO</a>
+                <a class="col text-decoration-none" href="/index.html">INÍCIO</a>
+                <a class="active col text-decoration-none" href="about.html"><i class="bi bi-geo-alt-fill"></i> SOBRE</a>
+                <a class="col text-decoration-none" href="contact.html">CONTATO</a>
             </div>
         </nav>
     </header>
@@ -68,11 +68,33 @@
 
     <main class="container mt-3 mt-lg-5 mb-3 p-4 p-lg-0">
         <section class="">
-            <h2 class="text-center mb-4 border-bottom pb-1">Lameiras de qualidade, com auto brilho e pintura emborrachada!</h2>
-            <p class="fs-6 text-complement-color-green text-center fw-bold"><i class="bi bi-truck fs-4 me-1"></i> ENTREGA EM TODO BRASIL</p>
+            <h2 class="text-center mb-4 border-bottom pb-1">Quem somos</h2>
+            <p class="text-center">Somos uma loja e trabalhamos com lameira cabo de aço (valadares) personalizada. Somos nós quem fazemos todo o processo de preparo e pintura da lameira e também a personalização do seu jeito. Estamos trabalhando com entrega para todo o Brasil.</p>
 
-            <div class="d-flex flex-wrap justify-content-center" id="products-container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <span class="text-complement-color-green mt-0 m-3"><i class="b bi-check-lg"></i> Compras na loja</span>
+                <span class="text-complement-color-green mt-0 m-3"><i class="b bi-check-lg"></i> Retirada na loja</span>
+                <span class="text-complement-color-green mt-0 m-3"><i class="b bi-check-lg"></i> Entrega</span>
             </div>
+
+            <section class="mt-4">
+                <div class="row">
+                    <div class="col-12 col-lg-4" data-aos="fade-down">
+                        <h3 class="mb-2 border-bottom pb-1"><i class="bi bi-geo-alt-fill"></i> Endereço</h3>
+                        <p class="fs-4">BR-116, 3560, KM 505 <br>
+                            <span class="fw-bold">Paraguassú</span> <br>
+                            Rafael Jambeiro - BA <br> CEP: 44520-000</p>
+
+                        <p><span class="fw-bold">Funcionamento: </span> Segunda à Sexta - das 07:00 até 17:00 e Sábado das 07:00 até 13:00</p>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0" data-aos="fade-down">
+                        <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15576.02870338915!2d-39.5187055!3d-12.5817783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71512dd307ec79f%3A0x67cf64d65c376969!2sLameir%C3%A3o%20Paraguassu!5e0!3m2!1spt-BR!2sbr!4v1627696031965!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0" data-aos="fade-down">
+                        <img class="rounded w-100" src="/images/geo.jpg" alt="imagem da loja">
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
@@ -81,7 +103,5 @@
     <script>
         AOS.init({duration: 1000});
     </script>
-    <script src="scripts/product-list.js"></script>
-    <script src="scripts/app.js"></script>
 </body>
 </html>

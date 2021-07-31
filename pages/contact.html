@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
 </head>
-<body class="" onload="loadProducts(products)">
+<body class="">
     <header class="d-flex flex-wrap align-items-center justify-content-evenly shadow-md pb-4">
         <div class="mt-4">
             <h1 class="mb-0 ms-2 text-primary-2" id="logo">Lameirão Paraguassu</h1>
@@ -22,9 +22,9 @@
 
         <nav class="bg-color-2 mt-4">
             <div class="fs-4">
-                <a class="active col text-decoration-none" href="index.html">INÍCIO</a>
-                <a class="col text-decoration-none" href="pages/about.html"><i class="bi bi-geo-alt-fill"></i> SOBRE</a>
-                <a class="col text-decoration-none" href="pages/contact.html">CONTATO</a>
+                <a class="col text-decoration-none" href="/index.html">INÍCIO</a>
+                <a class="col text-decoration-none" href="about.html"><i class="bi bi-geo-alt-fill"></i> SOBRE</a>
+                <a class="active col text-decoration-none" href="contact.html">CONTATO</a>
             </div>
         </nav>
     </header>
@@ -68,11 +68,23 @@
 
     <main class="container mt-3 mt-lg-5 mb-3 p-4 p-lg-0">
         <section class="">
-            <h2 class="text-center mb-4 border-bottom pb-1">Lameiras de qualidade, com auto brilho e pintura emborrachada!</h2>
-            <p class="fs-6 text-complement-color-green text-center fw-bold"><i class="bi bi-truck fs-4 me-1"></i> ENTREGA EM TODO BRASIL</p>
+            <h2 class="text-center mb-4 border-bottom pb-1">Fale conosco</h2>
 
-            <div class="d-flex flex-wrap justify-content-center" id="products-container">
-            </div>
+            <section class="m-3 m-lg-0">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <article class="border rounded shadow-md p-4 m-3" style="background-color: white;" data-aos="fade-right">
+                        <h3 class="mb-3">Contatos</h3>
+                        <p class="fs-5 mb-0"><i class="bi bi-whatsapp me-1"></i> (71) 99652-7444</p>
+                        <p class="fs-5 text-nowrap mb-0"><i class="bi bi-mailbox2 me-2 "></i>jailton.mascarenhas@gmail.com</p>
+                    </article>
+    
+                    <article class="border rounded shadow-md p-4 m-3" style="background-color: white;" data-aos="fade-left">
+                        <h3 class="mb-3">Redes Sociais</h3>
+                        <p class="fs-5 mb-0"><i class="bi bi-facebook me-1"></i> Lameirão Paraguassu</p>
+                        <p class="fs-5 mb-0"><i class="bi bi-instagram me-1"></i> @lameirao_paraguassu_</p>
+                    </article>
+                </div>
+            </section>
         </section>
     </main>
 
@@ -81,7 +93,5 @@
     <script>
         AOS.init({duration: 1000});
     </script>
-    <script src="scripts/product-list.js"></script>
-    <script src="scripts/app.js"></script>
 </body>
 </html>

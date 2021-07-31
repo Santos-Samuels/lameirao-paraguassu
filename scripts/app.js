@@ -12,7 +12,7 @@ const loadProducts = (products) => {
     productsContainer.innerHTML = ""
     products.forEach(product => {
         const html = `
-            <article class="product p-4 rounded border shadow-md m-3">
+            <article class="product p-4 rounded border shadow-md m-3" data-aos="fade-down">
                 <iframe  class="w-100 rounded" src="${product.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h3 class="text-center">${product.name}</h3>
                 <p class="text-center fs-6">${product.color}</p>
