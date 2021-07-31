@@ -102,7 +102,7 @@ const loadProductsFinishModal = (productID, products) => {
                     </div>
                 </div>
         
-                <h4 class="border-bottom pb-1 mb-2 text-secondary">Informações da comprador</h4>
+                <h4 class="border-bottom pb-1 mb-2 text-secondary">Informações do cliente</h4>
                 <div class="row g-2 mb-4">
                     <div class="col-12">
                         <label class="form-label" for="costumerName">Primeiro nome <span class="text-primary" title="Campo obrigatório">*</span></label>
@@ -118,8 +118,8 @@ const loadProductsFinishModal = (productID, products) => {
                 <h4 class="border-bottom pb-1 mb-2 text-secondary">Informações de entrega</h4>
                 <div class="row g-2">
                     <div class="col-12">
-                        <label class="form-label" for="costumerAdressStreet">Endereço <span class="text-primary" title="Campo obrigatório">*</span></label>
-                        <input class="form-control" type="text" name="costumerAdressStreet" id="costumerAdressStreet" placeholder="Ex: Rua nova, bloco A, 234" required>
+                        <label class="form-label" for="costumerAdress">Endereço <span class="text-primary" title="Campo obrigatório">*</span></label>
+                        <input class="form-control" type="text" name="costumerAdress" id="costumerAdress" placeholder="Ex: Rua nova, bloco A, 234" required>
                     </div>
         
                     <div class="col-12">
@@ -163,14 +163,7 @@ const generateWhatsappMessage = () => {
     var formData = document.getElementById("finishForm")
     var data = new FormData(formData)
     
-    const message = `Olá, eu sou ${data.get("costumerName")} e gostei de uma lameira que vir no seu site. ^ l
-        INFORMAÇÕES DA LAMEIRA - Frase: *${data.get("lameiraName")}*, Cor: *${data.get("lameiraColor")}*, Tamanho: *${data.get("lameiraSize")}*, Quantidade: *${data.get("lameiraQuantity")}* \n
-        bbb
-
-        Olá, eu sou Samuel e gostei de uma lameira que vir no seu site. 
-
-        INFORMAÇÕES DA LAMEIRA - Frase: Nunca foi sorte, sempre foi Deus, Cor: branco com preto, Tamanho: 100 x 260, Quantidade: 1
-    `
+    const message = `Olá, eu sou ${data.get("costumerName")} e gostei de uma lameira que vir no seu site.%0A%0A> INFORMAÇÕES DA LAMEIRA%0AFrase: *${data.get("lameiraName")}*%0ACor: *${data.get("lameiraColor")}*%0ATamanho: *${data.get("lameiraSize")}*%0AQuantidade: *${data.get("lameiraQuantity")}*%0A%0A> INFORMAÇÕES DO CLIENTE%0ANome: *${data.get("costumerName")}*%0ATelefone: *${data.get("costumerPhone")}*%0A%0A> INFORMAÇÕES DE ENTREGA%0AEndereço: *${data.get("costumerAdress")}*%0ABairro: *${data.get("costumerAdressDistrict")}*%0ACidade: *${data.get("costumerAdressCity")} - ${data.get("costumerAdressUF")}*%0ACidade: *${data.get("costumerAdressCEP")}*%0A`
 
     return `http://api.whatsapp.com/send?l=pt_BR&phone=5575998578488&text=${message}`
 }
