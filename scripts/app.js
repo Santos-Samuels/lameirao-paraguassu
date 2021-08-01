@@ -79,6 +79,11 @@ const loadProductsFinishModal = (productID, products) => {
             productModalContainer.innerHTML = `
                 <h4 class="border-bottom pb-1 mb-2 text-secondary">Informações da lameira</h4>
                 <div class="row g-2 mb-4">
+                <div class="col-12 col-lg-6">
+                        <label class="form-label">Modelo</label>
+                        <iframe  class="w-100 rounded" src="${product.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <input class="form-control d-none" type="text" name="lameiraModel" id="lameiraModel" value="${product.video}" disabled>
+                    </div>
                     <div class="col-12">
                         <label class="form-label" for="lameiraName">Frase da lameira <span class="text-primary" title="Campo obrigatório">*</span></label>
                         <input class="form-control" type="text" name="lameiraName" id="lameiraName" placeholder="Ex: ${product.name}" value="${product.name}" required>
@@ -163,7 +168,7 @@ const generateWhatsappMessage = () => {
     var formData = document.getElementById("finishForm")
     var data = new FormData(formData)
     
-    const message = `Olá, eu sou ${data.get("costumerName")} e gostei de uma lameira que vir no seu site.%0A%0A> INFORMAÇÕES DA LAMEIRA%0AFrase: *${data.get("lameiraName")}*%0ACor: *${data.get("lameiraColor")}*%0ATamanho: *${data.get("lameiraSize")}*%0AQuantidade: *${data.get("lameiraQuantity")}*%0A%0A> INFORMAÇÕES DO CLIENTE%0ANome: *${data.get("costumerName")}*%0ATelefone: *${data.get("costumerPhone")}*%0A%0A> INFORMAÇÕES DE ENTREGA%0AEndereço: *${data.get("costumerAdress")}*%0ABairro: *${data.get("costumerAdressDistrict")}*%0ACidade: *${data.get("costumerAdressCity")} - ${data.get("costumerAdressUF")}*%0ACidade: *${data.get("costumerAdressCEP")}*%0A`
+    const message = `Olá, eu sou ${data.get("costumerName")} e gostaria de encomendar uma lameira que vir no seu site.%0A%0A> INFORMAÇÕES DA LAMEIRA%0AModelo: *${data.get("lameiraModel")}*%0AFrase: *${data.get("lameiraName")}*%0ACor: *${data.get("lameiraColor")}*%0ATamanho: *${data.get("lameiraSize")}*%0AQuantidade: *${data.get("lameiraQuantity")}*%0A%0A> INFORMAÇÕES DO CLIENTE%0ANome: *${data.get("costumerName")}*%0ATelefone: *${data.get("costumerPhone")}*%0A%0A> INFORMAÇÕES DE ENTREGA%0AEndereço: *${data.get("costumerAdress")}*%0ABairro: *${data.get("costumerAdressDistrict")}*%0ACidade: *${data.get("costumerAdressCity")} - ${data.get("costumerAdressUF")}*%0ACidade: *${data.get("costumerAdressCEP")}*%0A`
 
     return `http://api.whatsapp.com/send?l=pt_BR&phone=5571996527444&text=${message}`
 }
