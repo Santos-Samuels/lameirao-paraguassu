@@ -23,7 +23,7 @@ Pensando em espandir os negócios adicionando a opção de envio para o Brasil, 
 
 ## Preview
 ### Landing Page no Desktop
-![alt text](https://raw.githubusercontent.com/Santos-Samuels/lameirao-paraguassu/master/preview/landingPage.png?token=AIMP53PQXRRA56T2MH7QTH3BA3SOM)
+<img src="https://raw.githubusercontent.com/Santos-Samuels/lameirao-paraguassu/master/preview/landingPage.png?token=AIMP53PQXRRA56T2MH7QTH3BA3SOM">
 
 ### Landing Page no Dispositivo Mobile
-![alt text](https://raw.githubusercontent.com/Santos-Samuels/lameirao-paraguassu/master/preview/landingPage-mobile.png?token=AIMP53OYNCLEBNYVJTAGYN3BA3SVE)
+<img src="https://raw.githubusercontent.com/Santos-Samuels/lameirao-paraguassu/master/preview/landingPage-mobile.png?token=AIMP53OYNCLEBNYVJTAGYN3BA3SVE">
